@@ -76,7 +76,6 @@ class Converter
       if @segments.length > 1
         words << "#{illions[@segments.length-2]}"
       end
-
       @segments.shift
     end
     words << convert_cents
