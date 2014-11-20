@@ -79,7 +79,6 @@ class Converter
       @segments.shift
     end
     words << convert_cents
-    words
     words.join(" ").capitalize
   end
 end
