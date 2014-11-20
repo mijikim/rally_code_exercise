@@ -45,7 +45,7 @@ class Converter
     teens = %w(eleven twelve thirteen fourteen fifteen sixteen seventeen
                     eighteen nineteen)
     tens = %w(ten twenty thirty forty fifty sixty seventy eighty ninety)
-    illions = %w(thousand million billion trillion)
+    magnitudes = %w(thousand million billion trillion)
 
     words = []
 
@@ -74,7 +74,7 @@ class Converter
       end
 
       if @segments.length > 1
-        words << "#{illions[@segments.length-2]}"
+        words << "#{magnitudes[@segments.length-2]}"
       end
       @segments.shift
     end
